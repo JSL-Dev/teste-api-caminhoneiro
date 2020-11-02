@@ -1,0 +1,18 @@
+Tempo total de desenvolvimento : seis horas
+
+O Script de banco se encontra no projeto, arquivo ScriptBanco.sql
+
+Modificar a conexão de banco no appsettings.json, variável "Database"
+
+Está configurada se rodar localmente para rodar no https://localhost:5001 
+
+Está incluso um pacote de teste para o postman, arquivo JSL Teste.postman_collection, foi configurado para o localhost acima
+
+Para acessar a API do google foi gerada uma key de teste que logo irá parar de funcionar, se estiver dando acesso negado trocar na classe GoogleMapsAPI.cs, variável googleApiKey
+
+Markdown/Plain Tex:
+
+Webapi para cadastrar, editar e excluir motorista de caminhão, rodar conforme configurações acima, documentação da API está no endereço abaixo
+
+Documentação API:
+https://localhost:5001/swagger/index.html
