@@ -1,0 +1,199 @@
+{
+	"info": {
+		"_postman_id": "3c37b771-1db4-4b08-be28-e58cbc019974",
+		"name": "JSL Teste",
+		"description": "Crud teste JSL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://localhost:5001/TruckDrivers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"assd\",\r\n    \"LastName\":\"dsdasdasd\",\r\n    \"Truck\":{\r\n        \"Model\":\"ABC\",\r\n        \"Brand\":\"KAS\",\r\n        \"License\":\"jiji\",\r\n        \"Axle\":1\r\n\r\n    },\r\n     \"Adress\":{\r\n        \"Street\":\"ABC\",\r\n        \"Coordenates\":\"ASFS\",\r\n        \"Number\":10,\r\n        \"City\": \"Mogi\"\r\n\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/TruckDrivers",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"TruckDrivers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:5001/TruckDrivers/Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n         {\r\n            \"Name\": \"Renato\",\r\n            \"LastName\":\"Rossetti\",\r\n            \"Truck\":{\r\n                \"Model\":\"Atego 2425\",\r\n                \"Brand\":\"Mercedes\",\r\n                \"License\":\"ABC-123\",\r\n                \"Axle\":6\r\n        \r\n            },\r\n             \"Address\":{\r\n                \"Street\":\"Rua Luiz da Silva Pires\",\r\n                \"Coordenates\":\"Automatic generated\",\r\n                \"Number\":1450,\r\n                \"City\": \"Mogi das Cruzes\"\r\n        \r\n            }\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/TruckDrivers/Create",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"TruckDrivers",
+						"Create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:5001/TruckDrivers/Edit/10",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 10,\r\n    \"name\": \"Renato\",\r\n    \"lastName\": \"Rossetti\",\r\n    \"truckId\": 13,\r\n    \"addressId\": 13,\r\n    \"address\": {\r\n        \"addressId\": 13,\r\n        \"street\": \"Rua Afonso Celso\",\r\n        \"coordenates\": \"-23.5298885, -46.1688612\",\r\n        \"number\": 833,\r\n        \"city\": \"São Paulo\",\r\n        \"truckDriver\": []\r\n    },\r\n    \"truck\": {\r\n        \"truckId\": 13,\r\n        \"model\": \"Fiat 2425\",\r\n        \"brand\": \"Fiat\",\r\n        \"license\": \"CDE-123\",\r\n        \"axle\": 6,\r\n        \"truckDriver\": []\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/TruckDrivers/Edit/10",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"TruckDrivers",
+						"Edit",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:5001/TruckDrivers/Delete/10",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"assd\",\r\n    \"LastName\":\"dsdasdasd\",\r\n    \"Truck\":{\r\n        \"Model\":\"ABC\",\r\n        \"Brand\":\"KAS\",\r\n        \"License\":\"jiji\",\r\n        \"Axle\":1\r\n\r\n    },\r\n     \"Adress\":{\r\n        \"Street\":\"ABC\",\r\n        \"Coordenates\":\"ASFS\",\r\n        \"Number\":10,\r\n        \"City\": \"Mogi\"\r\n\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/TruckDrivers/Delete/10",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"TruckDrivers",
+						"Delete",
+						"10"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
