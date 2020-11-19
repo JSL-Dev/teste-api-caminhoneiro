@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Presentation", "1-Presentation", "{77566A38-1985-40E8-BC1E-E0E88BE6AD3B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Services", "2-Services", "{DF4B523C-A869-4BDF-8631-ED11A63173A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Domain", "3-Domain", "{720F4ABF-6DF7-4A5E-87FB-AEF79828FB45}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Infraestructure", "4-Infraestructure", "{44980DE8-8AB4-4291-A1D7-954D68BB770A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSL.DDD.Repository", "JSL.DDD.Repository\JSL.DDD.Repository.csproj", "{598E005B-261A-43C2-B605-4A202BF7CBE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSL.DDD.Domain", "JSL.DDD.Domain\JSL.DDD.Domain.csproj", "{CBDC2DFB-8926-4EFD-A2BE-E244AC9AB927}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSL.DDD.Services", "JSL.DDD.Services\JSL.DDD.Services.csproj", "{3EA347DA-69DF-4CE1-A4EF-2A3BE517AAB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSL.DDD.API", "JSL.DDD.API\JSL.DDD.API.csproj", "{43F86391-BE00-4C08-9791-C74AE2B4530E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{598E005B-261A-43C2-B605-4A202BF7CBE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{598E005B-261A-43C2-B605-4A202BF7CBE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{598E005B-261A-43C2-B605-4A202BF7CBE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{598E005B-261A-43C2-B605-4A202BF7CBE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBDC2DFB-8926-4EFD-A2BE-E244AC9AB927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBDC2DFB-8926-4EFD-A2BE-E244AC9AB927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBDC2DFB-8926-4EFD-A2BE-E244AC9AB927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBDC2DFB-8926-4EFD-A2BE-E244AC9AB927}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EA347DA-69DF-4CE1-A4EF-2A3BE517AAB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EA347DA-69DF-4CE1-A4EF-2A3BE517AAB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EA347DA-69DF-4CE1-A4EF-2A3BE517AAB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EA347DA-69DF-4CE1-A4EF-2A3BE517AAB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43F86391-BE00-4C08-9791-C74AE2B4530E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43F86391-BE00-4C08-9791-C74AE2B4530E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43F86391-BE00-4C08-9791-C74AE2B4530E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43F86391-BE00-4C08-9791-C74AE2B4530E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{598E005B-261A-43C2-B605-4A202BF7CBE2} = {44980DE8-8AB4-4291-A1D7-954D68BB770A}
+		{CBDC2DFB-8926-4EFD-A2BE-E244AC9AB927} = {720F4ABF-6DF7-4A5E-87FB-AEF79828FB45}
+		{3EA347DA-69DF-4CE1-A4EF-2A3BE517AAB5} = {DF4B523C-A869-4BDF-8631-ED11A63173A2}
+		{43F86391-BE00-4C08-9791-C74AE2B4530E} = {DF4B523C-A869-4BDF-8631-ED11A63173A2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81234D1E-6D8B-41AA-A7ED-A18352D07D52}
+	EndGlobalSection
+EndGlobal
